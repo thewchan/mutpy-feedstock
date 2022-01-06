@@ -12,17 +12,17 @@ source:
 
 build:
   noarch: python
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.3
+    - python >=3.6
   run:
     - astmonkey >=0.2.2
     - jinja2 >=2.7.1
-    - python >=3.3
+    - python >=3.6
     - pyyaml <=3.11,>=3.10
     - termcolor >=1.0.0
 
